@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta property="og:image" content="https://family-vyacheslav-maria.love-2026.ru/hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://family-vyacheslav-maria.love-2026.ru/">
+    <!-- Подключение рукописных шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <!-- Hero секция -->
+    <section class="hero" id="hero">
+        <!-- Фоновое изображение hero.jpg (без наложений) -->
+        <div class="hero-bg" style="background-image: url('hero.jpg');"></div>
+        
+        <div class="hero-content">
+            <!-- Имена молодоженов строго вверху -->
+            <div class="names-wrapper">
+                <h1 class="names">Вячеслав & Мария</h1>
+            </div>
+            <!-- Кнопка с музыкой -->
+            <!-- Кнопка с музыкой -->
+<!-- Кнопка с музыкой -->
+<div class="music-wrapper">
+    <button class="music-btn" id="musicBtn">
+        <!-- SVG иконка PLAY (треугольник) - видна по умолчанию -->
+        <svg class="music-icon play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5,3 19,12 5,21"/>
+        </svg>
+        
+        <!-- SVG иконка PAUSE (две палочки) - скрыта по умолчанию -->
+        <svg class="music-icon pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+            <rect x="6" y="4" width="4" height="16"/>
+            <rect x="14" y="4" width="4" height="16"/>
+        </svg>
+        
+        <svg class="orbit-text" viewBox="0 0 100 100">
+            <path id="orbitPath" d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" />
+        </svg>
+    </button>
+    <audio id="bgMusic" src="1.mp3" loop></audio>
+</div>
+        </div>
+    </section>
+
+
+    <!-- Секция приглашения -->
+    <section class="invitation" id="invitation">
+        <div class="invitation-content">
+            <h2 class="invitation-title">Дорогие гости!</h2>
+            <p class="invitation-text">
+                Мы будем очень рады провести с вами этот особенный день,
+                наполненный любовью, счастьем и тёплыми воспоминаниями.
+                Приглашаем вас разделить с нами радость создания новой семьи.
+            </p>
+            
+            <!-- Календарь -->
+            <div class="calendar-wrapper">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <span class="calendar-month">Август 2026</span>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-weekday">Пн</div>
+                        <div class="calendar-weekday">Вт</div>
+                        <div class="calendar-weekday">Ср</div>
+                        <div class="calendar-weekday">Чт</div>
+                        <div class="calendar-weekday">Пт</div>
+                        <div class="calendar-weekday">Сб</div>
+                        <div class="calendar-weekday">Вс</div>
+                        
+                        <!-- Пустые ячейки для начала месяца (1 августа 2026 - суббота) -->
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day">19</div>
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+                        <div class="calendar-day">31</div>
+                    </div>
+                    <!-- Выделенная дата -->
+                    <div class="calendar-event">
+                        <span class="event-date">29</span>
+                        <span class="event-label">Наша свадьба</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция локация -->
+    <section class="location" id="location">
+        <!-- Фоновое изображение -->
+        <div class="location-bg" style="background-image: url('loc3.jpg');"></div>
+        
+        <div class="location-content">
+            <h2 class="location-title">Локация</h2>
+            
+            <p class="location-text">
+                Торжество состоится в базе отдыха «Жемчужина» <br> расположенной на берегу реки Ахтуба, в окружении живописной природы.
+
+            </p>
+            
+            <a href="https://yandex.ru/maps/-/CTQU5WoD"  target="_blank"  class="location-btn">Открыть карту</a>
+        </div>
+    </section>
+
+        <!-- Секция детали дня -->
+    <!-- Секция детали дня -->
+    <section class="schedule" id="schedule">
+        <!-- Фоновое изображение -->
+        <div class="schedule-bg" style="background-image: url('fon.jpg');"></div>
+        
+        <div class="schedule-content">
+            <h2 class="schedule-title">Детали дня</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">15:00</div>
+                    <div class="timeline-info">
+                        <div class="timeline-text">Сбор гостей</div>
+                        <div class="timeline-sub">Не забываем взять с собой хорошее настроение</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">15:30</div>
+                    <div class="timeline-info">
+                        <div class="timeline-text">Церемония</div>
+                        <div class="timeline-sub">Самый трогательный момент дня</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">16:10</div>
+                    <div class="timeline-info">
+                        <div class="timeline-text">Банкет</div>
+                        <div class="timeline-sub">Вкусный ужин в кругу близких</div>
+                    </div>
+                </div>
+                
+                <!-- <div class="timeline-item">
+                    <div class="timeline-time">20:00</div>
+                    <div class="timeline-info">
+                        <div class="timeline-text">Торт</div>
+                        <div class="timeline-sub">Сладкий сюрприз и задувание свечей</div>
+                    </div>
+                </div> -->
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">22:00</div>
+                    <div class="timeline-info">
+                        <div class="timeline-text">Окончание праздника</div>
+                        <div class="timeline-sub">К сожалению, даже такие радостные дни подходят к концу</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Секция Подарки -->
+<section class="gifts" id="gifts">
+    <!-- Фоновое изображение -->
+    <div class="gifts-bg" style="background-image: url('fon.jpg');"></div>
+    
+    <div class="gifts-container">
+        <h2 class="gifts-title">Подарки</h2>
+        
+        <div class="gifts-content">
+            <p class="gifts-text">
+                Самый дорогой подарок для нас — это вы!<br>
+                Мы будем счастливы видеть ваши улыбки и чувствовать вашу теплоту.<br><br>
+                А вместо цветов мы будем рады вашим тёплым объятиям и искренним улыбкам в этот особенный день!
+            </p>
+            
+            <!-- Иконка сердца (опционально) -->
+            <div class="gifts-heart">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#d4c5a9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Секция дресс-код -->
+<!-- Секция дресс-код -->
+<!-- Секция дресс-код -->
+<section class="dresscode" id="dresscode">
+    <!-- Фоновое изображение -->
+    <div class="dresscode-bg" style="background-image: url('fon.jpg');"></div>
+    
+    <div class="dresscode-container">
+        <!-- Заголовок сверху -->
+        <h2 class="dresscode-title">Дресс-код</h2>
+        
+        <!-- Контент: слева текст, справа квадраты -->
+        <div class="dresscode-content">
+            <div class="dresscode-left">
+                <p class="dresscode-text">
+                    Мы будем рады, если при выборе наряда вы поддержите цветовую гамму нашего торжества.
+                </p>
+            </div>
+            
+            <div class="dresscode-right">
+                <div class="color-square" style="background: #ecebbb;"></div>
+                <div class="color-square" style="background: #a89480;"></div>
+                <div class="color-square" style="background: #ddb9bd;"></div>
+                <div class="color-square" style="background: #c3d4b0;"></div>
+                <div class="color-square" style="background: #c0d1db;"></div>
+            </div>
+        </div>
+
+        <div class="dresscode-footer">
+            <p class="dresscode-footer-text">вдохновляйтесь образами...</p>
+            <img src="dress22.png" alt="Дресс-код" class="dresscode-footer-image">
+            <img src="dress3.png" alt="Дресс-код" class="dresscode-footer-image" style="margin-top: 1rem;">
+
+        </div>
+    </div>
+</section>
+
+<!-- Секция Чат гостей -->
+<section class="guest-chat" id="guest-chat">
+    <!-- Фоновое изображение (такое же, как на других секциях) -->
+    <div class="guest-chat-bg" style="background-image: url('fon.jpg');"></div>
+    
+    <div class="guest-chat-container">
+        <h2 class="guest-chat-title">Чат гостей</h2>
+        
+        <div class="guest-chat-content">
+            <p class="guest-chat-text">
+                Присоединяйтесь к нашему общему чату, чтобы быть на связи со всеми гостями, 
+                обсуждать детали и делиться ожиданиями от предстоящего праздника!
+            </p>
+            
+            <a href="https://max.ru/join/1YeqhqqDF1z7iXK_zsEuWuOOc2toVJHLt5V2Q5DfT1I" 
+               class="guest-chat-btn" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                Вступить в чат
+            </a>
+            
+            <!-- <p class="guest-chat-hint">
+                🔗 Ссылка-приглашение для всех гостей
+            </p> -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Секция RSVP -->
+<section class="rsvp" id="rsvp">
+    <!-- Фоновое изображение -->
+    <div class="rsvp-bg" style="background-image: url('fon.jpg');"></div>
+    
+    <div class="rsvp-container">
+        <h2 class="rsvp-title">Подтвердите присутствие</h2>
+
+
+           <div class="rsvp-deadline">
+        <p class="deadline-text">Пожалуйста, ответьте</p>
+        <p class="deadline-date"><strong>до 15 августа 2026 года</strong></p>
+    </div>
+        
+        <form class="rsvp-form" id="rsvpForm">
+            <div class="form-group">
+                <label for="name" class="form-label">Ваше имя и фамилия</label>
+                <input type="text" id="name" class="form-input" placeholder="Например: Иван Петров" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Вы придёте?</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="attendance" value="yes" required>
+                        <span class="radio-custom"></span>
+                        Да, обязательно приду
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="attendance" value="no" required>
+                        <span class="radio-custom"></span>
+                        К сожалению, не смогу
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit" class="rsvp-btn">Отправить</button>
+
+<div class="rsvp-contact">
+    <span class="rsvp-phone">+7 937 717-19-01 Елена</span>
+    <span class="rsvp-hint">(Контакты для связи)</span>
+</div>
+        </form>
+    </div>
+</section>
+
+
+
+<!-- Секция таймер -->
+<!-- Секция таймер -->
+<section class="timer" id="timer">
+    <!-- Фоновое изображение -->
+    <div class="timer-bg" style="background-image: url('footer.jpg');"></div>
+    
+    <div class="timer-container">
+        <h2 class="timer-title">ДО ВСТРЕЧИ ОСТАЛОСЬ</h2>
+        
+        <div class="timer-grid">
+            <div class="timer-item">
+                <span class="timer-number" id="days">00</span>
+                <span class="timer-label">Дней</span>
+            </div>
+            <div class="timer-item">
+                <span class="timer-number" id="hours">00</span>
+                <span class="timer-label">Часов</span>
+            </div>
+            <div class="timer-item">
+                <span class="timer-number" id="minutes">00</span>
+                <span class="timer-label">Минут</span>
+            </div>
+            <div class="timer-item">
+                <span class="timer-number" id="seconds">00</span>
+                <span class="timer-label">Секунд</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
